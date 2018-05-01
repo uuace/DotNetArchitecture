@@ -14,6 +14,7 @@ namespace Solution.Infrastructure.Tests
 		{
 			DependencyInjection.RegisterServices();
 			DependencyInjection.AddDbContextInMemoryDatabase<DatabaseContext>();
+			DependencyInjection.GetService<DatabaseContext>().Seed();
 			DatabaseUnitOfWork = DependencyInjection.GetService<IDatabaseUnitOfWork>();
 		}
 

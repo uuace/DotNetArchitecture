@@ -12,6 +12,7 @@ namespace Solution.Application.Tests
 		{
 			DependencyInjection.RegisterServices();
 			DependencyInjection.AddDbContextInMemoryDatabase<DatabaseContext>();
+			DependencyInjection.GetService<DatabaseContext>().Seed();
 			UserApplication = DependencyInjection.GetService<IUserApplication>();
 		}
 

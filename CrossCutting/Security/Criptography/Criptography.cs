@@ -37,13 +37,11 @@ namespace Solution.CrossCutting.Security
 
 		private byte[] Transform(byte[] bytes, ICryptoTransform transform)
 		{
-			using (var ms = new MemoryStream())
-			{
-				var cs = new CryptoStream(ms, transform, CryptoStreamMode.Write);
-				cs.Write(bytes, 0, bytes.Length);
-				cs.Close();
-				return ms.ToArray();
-			}
+			var ms = new MemoryStream();
+			var cs = new CryptoStream(ms, transform, CryptoStreamMode.Write);
+			cs.Write(bytes, 0, bytes.Length);
+			cs.Close();
+			return ms.ToArray();
 		}
 	}
 }

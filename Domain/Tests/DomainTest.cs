@@ -14,6 +14,7 @@ namespace Solution.Domain.Tests
 		{
 			DependencyInjection.RegisterServices();
 			DependencyInjection.AddDbContextInMemoryDatabase<DatabaseContext>();
+			DependencyInjection.GetService<DatabaseContext>().Seed();
 			AuthenticationDomain = DependencyInjection.GetService<IAuthenticationDomain>();
 			UserDomain = DependencyInjection.GetService<IUserDomain>();
 		}

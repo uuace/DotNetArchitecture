@@ -29,6 +29,7 @@ namespace Solution.Web.UI.Extensions
 		{
 			DependencyInjection.RegisterServices(services);
 			DependencyInjection.AddDbContext<DatabaseContext>(configuration.GetConnectionString(nameof(DatabaseContext)));
+			DependencyInjection.GetService<DatabaseContext>().Seed();
 		}
 
 		public static void AddMvcCustom(this IServiceCollection services)
