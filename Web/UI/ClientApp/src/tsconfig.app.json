@@ -1,0 +1,8 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"module": "esnext",
+		"outDir": "../out-tsc/app"
+	},
+	"extends": "../tsconfig.json"
+}
