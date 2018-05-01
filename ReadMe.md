@@ -93,6 +93,14 @@
 
 ![Screenshot](Screenshots/14.png)
 
+**Specifications:**
+
+**Processor:** Intel Core I7 8700K Coffee Lake 8th-generation.
+
+**Memory:** 16GB 2400Mhz DDR4.
+
+**Storage:** Samsung Evo 960 SSD M2 250gb.
+
 ## Visual Studio Extensions:
 
 1. **CodeMaid**: https://marketplace.visualstudio.com/items?itemName=SteveCadwallader.CodeMaid

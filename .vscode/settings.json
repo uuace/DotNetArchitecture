@@ -6,7 +6,7 @@
 	"team.showWelcomeMessage": false,
 	"terminal.integrated.fontSize": 16,
 	"window.zoomLevel": 1.2,
-	"workbench.colorTheme": "Visual Studio Dark",
+	"workbench.colorTheme": "Atom One Dark",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "none"
 }
