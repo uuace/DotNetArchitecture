@@ -6,7 +6,7 @@ import { ModalService } from "./modal.service";
 
 @Injectable()
 export class AuthenticationService {
-	private service = "/AuthenticationService";
+	private service = "AuthenticationService";
 	private token = "token";
 
 	constructor(

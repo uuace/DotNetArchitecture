@@ -5,7 +5,7 @@ import { ReplaySubject } from "rxjs/ReplaySubject";
 @Injectable()
 export class ApplicationService {
 	private application = new ReplaySubject(1);
-	private service = "/ApplicationService";
+	private service = "ApplicationService";
 
 	constructor(private readonly http: HttpClient) { }
 
