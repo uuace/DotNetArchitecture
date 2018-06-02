@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netcoreapp2.1</TargetFramework>
+	</PropertyGroup>
+	<PropertyGroup>
+		<CodeAnalysisRuleSet>..\..\Solution Items\Ruleset.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\CrossCutting\Resources\Solution.CrossCutting.Resources.csproj" />
+		<ProjectReference Include="..\..\CrossCutting\Utils\Solution.CrossCutting.Utils.csproj" />
+		<ProjectReference Include="..\Enums\Solution.Model.Enums.csproj" />
+	</ItemGroup>
+</Project>
